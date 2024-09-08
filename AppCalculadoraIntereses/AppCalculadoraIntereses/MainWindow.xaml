@@ -1,0 +1,18 @@
+﻿<Window x:Class="AppCalculadoraIntereses.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppCalculadoraIntereses"
+        mc:Ignorable="d"
+        Title="Calculadora de Intereses" Height="400" Width="270">
+    <Grid>
+
+        <TextBlock HorizontalAlignment="Left" Margin="59,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="20" TextAlignment="Center" Height="75" Width="146"><Run Text="Calculadora "/><LineBreak/><Run Text="de"/><LineBreak/><Run Text="Inter"/><Run Text="és"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="110,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial" TextAlignment="Center" Foreground="#FF9E9696" Height="14" Width="41"><Run Language="es-es" Text="V 0.1.0"/><Run Text=" "/></TextBlock>
+
+        <Button Content="Interés simple" HorizontalAlignment="Left" Height="35" Margin="70,153,0,0" VerticalAlignment="Top" Width="116" Click="InteresSimple_Click" BorderBrush="#FF080808"/>
+        <Button Content="Interés Compuesto" HorizontalAlignment="Left" Height="35" Margin="70,224,0,0" VerticalAlignment="Top" Width="116" Click="InteresCompuesto_Click" BorderBrush="#FF080808"/>
+
+    </Grid>
+</Window>
