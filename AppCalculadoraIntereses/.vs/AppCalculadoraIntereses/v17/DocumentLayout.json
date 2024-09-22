@@ -1,97 +1,71 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|c:\\users\\usuario\\desktop\\trabajos-u-5to-semestre\\appcalculadoraintereses\\appcalculadoraintereses\\interessimplewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|solutionrelative:appcalculadoraintereses\\interessimplewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F1B68658-66B9-434E-AA09-206235E58A2B}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|c:\\users\\usuario\\desktop\\appcalculadoraintereses\\appcalculadoraintereses\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1B68658-66B9-434E-AA09-206235E58A2B}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|solutionrelative:appcalculadoraintereses\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|c:\\users\\usuario\\desktop\\trabajos-u-5to-semestre\\appcalculadoraintereses\\appcalculadoraintereses\\interessimplewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|solutionrelative:appcalculadoraintereses\\interessimplewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1B68658-66B9-434E-AA09-206235E58A2B}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|c:\\users\\usuario\\desktop\\appcalculadoraintereses\\appcalculadoraintereses\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F1B68658-66B9-434E-AA09-206235E58A2B}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|solutionrelative:appcalculadoraintereses\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|c:\\users\\usuario\\desktop\\trabajos-u-5to-semestre\\appcalculadoraintereses\\appcalculadoraintereses\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|solutionrelative:appcalculadoraintereses\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|c:\\users\\usuario\\desktop\\trabajos-u-5to-semestre\\appcalculadoraintereses\\appcalculadoraintereses\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|solutionrelative:appcalculadoraintereses\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|c:\\users\\usuario\\desktop\\trabajos-u-5to-semestre\\appcalculadoraintereses\\appcalculadoraintereses\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{205BB3E6-2721-4BAA-8B87-E242DB4C7A7A}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|solutionrelative:appcalculadoraintereses\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F1B68658-66B9-434E-AA09-206235E58A2B}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|c:\\users\\usuario\\desktop\\appcalculadoraintereses\\appcalculadoraintereses\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F1B68658-66B9-434E-AA09-206235E58A2B}|AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj|solutionrelative:appcalculadoraintereses\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 266,
+          "DockedWidth": 196,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AppCalculadoraIntereses\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml",
+              "RelativeToolTip": "AppCalculadoraIntereses\\MainWindow.xaml",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAwwKQAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-22T23:14:32.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 142,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InteresSimpleWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\InteresSimpleWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AppCalculadoraIntereses\\InteresSimpleWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\InteresSimpleWindow.xaml.cs",
-              "RelativeToolTip": "AppCalculadoraIntereses\\InteresSimpleWindow.xaml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAUwC0AAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T18:32:31.554Z",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "AppCalculadoraIntereses\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml",
+              "RelativeToolTip": "AppCalculadoraIntereses\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T19:13:38.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InteresSimpleWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\InteresSimpleWindow.xaml",
-              "RelativeDocumentMoniker": "AppCalculadoraIntereses\\InteresSimpleWindow.xaml",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\InteresSimpleWindow.xaml",
-              "RelativeToolTip": "AppCalculadoraIntereses\\InteresSimpleWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-08T18:30:49.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\App.xaml",
-              "RelativeDocumentMoniker": "AppCalculadoraIntereses\\App.xaml",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\App.xaml",
-              "RelativeToolTip": "AppCalculadoraIntereses\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-08T17:45:47.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "AppCalculadoraIntereses\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml",
-              "RelativeToolTip": "AppCalculadoraIntereses\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-08T17:41:19.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "AppCalculadoraIntereses\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\MainWindow.xaml.cs",
               "RelativeToolTip": "AppCalculadoraIntereses\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAjwCMAAAAFAAAA",
+              "ViewState": "AQIAAFgAAAAAAAAAAAASwG0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T17:41:14.96Z",
+              "WhenOpened": "2024-09-21T19:13:38.334Z",
               "EditorCaption": ""
             }
           ]

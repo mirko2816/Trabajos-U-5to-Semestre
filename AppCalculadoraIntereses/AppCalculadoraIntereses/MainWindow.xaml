@@ -4,15 +4,171 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppCalculadoraIntereses"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
-        Title="Calculadora de Intereses" Height="400" Width="270">
+        Title="Calculadora Económica" Height="600" Width="800" WindowStartupLocation="CenterScreen" >
     <Grid>
 
-        <TextBlock HorizontalAlignment="Left" Margin="59,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Cascadia Code" FontSize="20" TextAlignment="Center" Height="75" Width="146"><Run Text="Calculadora "/><LineBreak/><Run Text="de"/><LineBreak/><Run Text="Inter"/><Run Text="és"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="110,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Arial" TextAlignment="Center" Foreground="#FF9E9696" Height="14" Width="41"><Run Language="es-es" Text="V 0.1.0"/><Run Text=" "/></TextBlock>
+        <!-- Pestañas (TabControl) -->
+        <TabControl Grid.Row="0" Name="TabOperaciones" Margin="0,0,0,0">
+            <!-- Pestaña de Interés Simple -->
+            <TabItem Header="Interés Simple" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+                <Grid Height="Auto">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
 
-        <Button Content="Interés simple" HorizontalAlignment="Left" Height="35" Margin="70,153,0,0" VerticalAlignment="Top" Width="116" Click="InteresSimple_Click" BorderBrush="#FF080808"/>
-        <Button Content="Interés Compuesto" HorizontalAlignment="Left" Height="35" Margin="70,224,0,0" VerticalAlignment="Top" Width="116" Click="InteresCompuesto_Click" BorderBrush="#FF080808"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="36*" MaxHeight="260" MinHeight="260"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="39*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Formulario de entrada para Interés Simple -->
+                    <Border Grid.Column="0"
+                            Grid.Row="0"
+                            Grid.RowSpan="2"
+                            CornerRadius="5"
+                            BorderBrush="Gray"
+                            Background="WhiteSmoke"
+                            BorderThickness="2"
+                            Padding="8"
+                            Margin="10,10,10,3">
+                        <StackPanel Margin="10" VerticalAlignment="Center">
+                            <TextBlock Text="Capital (C)" Margin="5"/>
+                            <TextBox x:Name="txtCapitalSimple" Margin="5"/>
+                            <TextBlock Text="Tasa de Interés (%)" Margin="5"/>
+                            <TextBox x:Name="txtTasaSimple" Margin="5"/>
+                            <TextBlock Text="Años (t)" Margin="5"/>
+                            <TextBox x:Name="txtAniosSimple" Margin="5"/>
+                            <Button Content="Calcular" Click="CalcularInteresSimple" Margin="10"/>
+                            <Button Content="Borrar Datos" Click="BorrarDatosInteresSimple" Margin="10"/>
+                        </StackPanel>
+                    </Border>
+
+
+                    <!-- Resultado -->
+                    <Border Grid.Row="1" 
+                            Grid.Column="1"
+                            BorderBrush="Gray"
+                            BorderThickness="2"
+                            CornerRadius="5"
+                            Width="200"
+                            Height="25"
+                            Background="WhiteSmoke"
+                            Margin="0,0,0,0">
+                        <TextBlock  x:Name="txtResultadoSimple"
+                                    VerticalAlignment="Center" 
+                                    FontSize="14"
+                                    Margin="10,1,10,0" 
+                                    Height="22"
+                                    TextAlignment="Center"
+                                    Text="Resultado"
+                                    Opacity="0.3"/>
+                    </Border>
+
+                    <!-- Gráfico de Interés Simple -->
+                    <lvc:CartesianChart Grid.Column="1" x:Name="chartInteresSimple" Margin="10">
+                        <lvc:CartesianChart.Series>
+                            <lvc:LineSeries Title="Capital" Values="{Binding InteresSimpleSeries}"/>
+                        </lvc:CartesianChart.Series>
+                        <lvc:CartesianChart.AxisX>
+                            <lvc:Axis Title="Años" Labels="{Binding LabelsAnios}"/>
+                        </lvc:CartesianChart.AxisX>
+                        <lvc:CartesianChart.AxisY>
+                            <lvc:Axis Title="Capital"/>
+                        </lvc:CartesianChart.AxisY>
+                    </lvc:CartesianChart>
+
+                    <!-- Tabla de Simulación de Interés Simple -->
+                    <DataGrid Grid.Row="2" Grid.ColumnSpan="2" x:Name="dataGridSimple" AutoGenerateColumns="False" Margin="10,10,10,10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Periodo (Año)" Binding="{Binding Periodo}" Width="*"/>
+                            <DataGridTextColumn Header="Capital Inicial" Binding="{Binding CapitalInicial}" Width="*"/>
+                            <DataGridTextColumn Header="Interés Ganado" Binding="{Binding Interes}" Width="*"/>
+                            <DataGridTextColumn Header="Capital Acumulado" Binding="{Binding CapitalAcumulado}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                </Grid>
+            </TabItem>
+
+            <!-- Pestaña de Interés Compuesto -->
+            <TabItem Header="Interés Compuesto">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="36*" MaxHeight="280" MinHeight="270"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="39*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Formulario de entrada para Interés Compuesto -->
+                    <Border Grid.Column="0"
+                            Grid.Row="0"
+                            Grid.RowSpan="2"
+                            CornerRadius="5"
+                            BorderBrush="Gray"
+                            Background="WhiteSmoke"
+                            BorderThickness="2"
+                            Padding="8"
+                            Margin="10,10,10,3">
+                        <StackPanel Grid.Column="0" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="Capital (C)" Margin="5"/>
+                            <TextBox x:Name="txtCapitalCompuesto" Margin="5"/>
+                            <TextBlock Text="Tasa de Interés (%)" Margin="5"/>
+                            <TextBox x:Name="txtTasaCompuesto" Margin="5"/>
+                            <TextBlock Text="Años (t)" Margin="5"/>
+                            <TextBox x:Name="txtAniosCompuesto" Margin="5"/>
+                            <Button Content="Calcular" Click="CalcularInteresCompuesto" Margin="10"/>
+                            <Button Content="Borrar Datos" Click="BorrarDatosInteresCompuesto" Margin="10"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <!-- Gráfico de Interés Compuesto -->
+                    <lvc:CartesianChart Grid.Column="1" x:Name="chartInteresCompuesto" Margin="10">
+                        <lvc:CartesianChart.Series>
+                            <lvc:LineSeries Title="Capital" Values="{Binding InteresCompuestoSeries}"/>
+                        </lvc:CartesianChart.Series>
+                        <lvc:CartesianChart.AxisX>
+                            <lvc:Axis Title="Años" Labels="{Binding LabelsAnios}"/>
+                        </lvc:CartesianChart.AxisX>
+                        <lvc:CartesianChart.AxisY>
+                            <lvc:Axis Title="Capital"/>
+                        </lvc:CartesianChart.AxisY>
+                    </lvc:CartesianChart>
+                    
+                    <!-- Resultado -->
+                    <Border Grid.Row="1" 
+                            Grid.Column="1"
+                            BorderBrush="Gray"
+                            BorderThickness="2"
+                            CornerRadius="5"
+                            Width="500"
+                            Height="25"
+                            Background="WhiteSmoke"
+                            Margin="0,0,0,0">
+                        <TextBlock x:Name="txtResultadoCompuesto" 
+                                   VerticalAlignment="Center"
+                                   TextAlignment="Center"
+                                   Margin="10,1,10,0"
+                                   FontSize="14"
+                                   Text="Resultado"
+                                   Opacity="0.3"/>
+                    </Border>
+                </Grid>
+
+            </TabItem>
+        </TabControl>
 
     </Grid>
+
+
 </Window>
+
