@@ -12,7 +12,7 @@
         <!-- Pestañas (TabControl) -->
         <TabControl Grid.Row="0" Name="TabOperaciones" Margin="0,0,0,0">
             <!-- Pestaña de Interés Simple -->
-            <TabItem Header="Interés Simple" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+            <TabItem Header="Interés Simple">
                 <Grid Height="Auto">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -104,7 +104,7 @@
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="36*" MaxHeight="280" MinHeight="270"/>
+                        <RowDefinition Height="36*" MaxHeight="260" MinHeight="260"/>
                         <RowDefinition Height="5*"/>
                         <RowDefinition Height="39*"/>
                     </Grid.RowDefinitions>
@@ -158,10 +158,21 @@
                                    VerticalAlignment="Center"
                                    TextAlignment="Center"
                                    Margin="10,1,10,0"
+                                   Height="22"
                                    FontSize="14"
                                    Text="Resultado"
                                    Opacity="0.3"/>
                     </Border>
+
+                    <!-- Tabla de Simulación de Interés Compuesto -->
+                    <DataGrid Grid.Row="2" Grid.ColumnSpan="2" x:Name="dataGridCompuesto" AutoGenerateColumns="False" Margin="10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Periodo (Año)" Binding="{Binding Periodo}" Width="*"/>
+                            <DataGridTextColumn Header="Capital Inicial" Binding="{Binding CapitalInicial}" Width="*"/>
+                            <DataGridTextColumn Header="Interés Ganado" Binding="{Binding Interes}" Width="*"/>
+                            <DataGridTextColumn Header="Capital Acumulado" Binding="{Binding CapitalAcumulado}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
 
             </TabItem>

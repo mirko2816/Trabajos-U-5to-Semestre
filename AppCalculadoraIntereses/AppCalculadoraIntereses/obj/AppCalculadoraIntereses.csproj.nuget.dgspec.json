@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
         "projectName": "AppCalculadoraIntereses",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -79,6 +79,11 @@ namespace AppCalculadoraIntereses
                     });
                 }
 
+                // Margenes arreglados
+                chartInteresSimple.AxisY[0].MinValue = InteresSimpleSeries.Min();
+                chartInteresSimple.AxisY[0].MaxValue = InteresSimpleSeries.Max();
+
+
                 dataGridSimple.ItemsSource = SimulacionInteresSimple;
                 double capitalFinal = Math.Round(InteresSimpleSeries[(int)anios],4);
                 txtResultadoSimple.Opacity = 1;
@@ -99,12 +104,36 @@ namespace AppCalculadoraIntereses
                 double tasa = Convert.ToDouble(txtTasaCompuesto.Text) / 100;
                 double anios = Convert.ToDouble(txtAniosCompuesto.Text);
 
-                double valorFuturo = capital * Math.Pow((1 + tasa), anios);
-                double interes = valorFuturo - capital;
+                InteresCompuestoSeries.Clear();
+                LabelsAnios.Clear();
 
-                double valorFuturoRedon = Math.Round(valorFuturo, 4);
-                double interesRedon = Math.Round(interes, 4);
+                for (int i = 0; i <= anios; i++)
+                {
+                    double capitalInicial = capital;
+                    double valorFuturo = capital * Math.Pow((1 + tasa), i);
+                    double interes = valorFuturo - capital;
 
+                    InteresCompuestoSeries.Add(valorFuturo);
+                    LabelsAnios.Add(i.ToString());
+
+                    // Agregamos los datos a la tabla de simulación
+                    SimulacionInteresCompuesto.Add(new Simulacion
+                    {
+                        Periodo = i,
+                        CapitalInicial = capitalInicial,
+                        Interes = interes,
+                        CapitalAcumulado = valorFuturo
+                    });
+                }
+
+                double valorFuturoRedon = Math.Round(InteresCompuestoSeries[(int)anios], 4);
+                double interesRedon = Math.Round(InteresCompuestoSeries[(int)anios] - capital, 4);
+
+                // Margenes arreglados
+                chartInteresCompuesto.AxisY[0].MinValue = InteresCompuestoSeries.Min();
+                chartInteresCompuesto.AxisY[0].MaxValue = InteresCompuestoSeries.Max();
+
+                dataGridCompuesto.ItemsSource = SimulacionInteresCompuesto;
                 txtResultadoCompuesto.Opacity = 1;
                 txtResultadoCompuesto.Text = $"Interés: S/. {interesRedon}, Valor futuro: S/. {valorFuturoRedon}";
             }
