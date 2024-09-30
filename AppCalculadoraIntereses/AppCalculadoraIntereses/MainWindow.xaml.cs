@@ -42,8 +42,7 @@ namespace AppCalculadoraIntereses
             InteresCompuestoSeries = new ChartValues<double>();
             LabelsAnios = new List<string>();
 
-            SimulacionInteresSimple = new List<Simulacion>();
-            SimulacionInteresCompuesto = new List<Simulacion>();
+            
 
             DataContext = this;
         }
@@ -59,6 +58,7 @@ namespace AppCalculadoraIntereses
 
                 InteresSimpleSeries.Clear();
                 LabelsAnios.Clear();
+                SimulacionInteresSimple = new List<Simulacion>();
 
                 for (int i = 0; i <= anios; i++)
                 {
@@ -85,7 +85,7 @@ namespace AppCalculadoraIntereses
 
 
                 dataGridSimple.ItemsSource = SimulacionInteresSimple;
-                double capitalFinal = Math.Round(InteresSimpleSeries[(int)anios],4);
+                double capitalFinal = Math.Round(InteresSimpleSeries[(int)anios],2);
                 txtResultadoSimple.Opacity = 1;
                 txtResultadoSimple.Text = $"Capital Final: S/. {InteresSimpleSeries[(int)anios]}";
             }
@@ -106,6 +106,7 @@ namespace AppCalculadoraIntereses
 
                 InteresCompuestoSeries.Clear();
                 LabelsAnios.Clear();
+                SimulacionInteresCompuesto = new List<Simulacion>();
 
                 for (int i = 0; i <= anios; i++)
                 {
@@ -120,14 +121,14 @@ namespace AppCalculadoraIntereses
                     SimulacionInteresCompuesto.Add(new Simulacion
                     {
                         Periodo = i,
-                        CapitalInicial = capitalInicial,
-                        Interes = interes,
-                        CapitalAcumulado = valorFuturo
+                        CapitalInicial = Math.Round(capitalInicial,2),
+                        Interes = Math.Round(interes,2),
+                        CapitalAcumulado = Math.Round(valorFuturo, 2)
                     });
                 }
 
-                double valorFuturoRedon = Math.Round(InteresCompuestoSeries[(int)anios], 4);
-                double interesRedon = Math.Round(InteresCompuestoSeries[(int)anios] - capital, 4);
+                double valorFuturoRedon = Math.Round(InteresCompuestoSeries[(int)anios], 2);
+                double interesRedon = Math.Round(InteresCompuestoSeries[(int)anios] - capital, 2);
 
                 // Margenes arreglados
                 chartInteresCompuesto.AxisY[0].MinValue = InteresCompuestoSeries.Min();
@@ -135,7 +136,7 @@ namespace AppCalculadoraIntereses
 
                 dataGridCompuesto.ItemsSource = SimulacionInteresCompuesto;
                 txtResultadoCompuesto.Opacity = 1;
-                txtResultadoCompuesto.Text = $"Interés: S/. {interesRedon}, Valor futuro: S/. {valorFuturoRedon}";
+                txtResultadoCompuesto.Text = $"Interés: S/. {interesRedon}\t\tValor futuro: S/. {valorFuturoRedon}";
             }
             catch (Exception ex)
             {

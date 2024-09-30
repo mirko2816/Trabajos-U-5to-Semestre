@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj": {}
+    "C:\\Users\\Alumno_DAII\\Desktop\\a\\Nueva carpeta\\Trabajos-U-5to-Semestre-main\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj": {
+    "C:\\Users\\Alumno_DAII\\Desktop\\a\\Nueva carpeta\\Trabajos-U-5to-Semestre-main\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
+        "projectUniqueName": "C:\\Users\\Alumno_DAII\\Desktop\\a\\Nueva carpeta\\Trabajos-U-5to-Semestre-main\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
         "projectName": "AppCalculadoraIntereses",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\obj\\",
+        "projectPath": "C:\\Users\\Alumno_DAII\\Desktop\\a\\Nueva carpeta\\Trabajos-U-5to-Semestre-main\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
+        "packagesPath": "C:\\Users\\Alumno_DAII\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alumno_DAII\\Desktop\\a\\Nueva carpeta\\Trabajos-U-5to-Semestre-main\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alumno_DAII\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

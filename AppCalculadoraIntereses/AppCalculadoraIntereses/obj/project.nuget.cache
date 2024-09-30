@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0JlSNt3qMhI=",
+  "dgSpecHash": "GQKTiZllBpg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Trabajos-U-5to-Semestre\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
+  "projectFilePath": "C:\\Users\\Alumno_DAII\\Desktop\\a\\Nueva carpeta\\Trabajos-U-5to-Semestre-main\\AppCalculadoraIntereses\\AppCalculadoraIntereses\\AppCalculadoraIntereses.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
+    "C:\\Users\\Alumno_DAII\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\Alumno_DAII\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
   ],
   "logs": [
     {
